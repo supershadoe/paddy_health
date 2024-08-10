@@ -1,0 +1,35 @@
+name: paddy_health
+description: "App to detect diseases in crops using ML model"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  collection: ^1.18.0
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  image: ^4.1.7
+  image_picker: ^1.0.7
+  riverpod: ^2.5.1
+  tflite_flutter: ^0.10.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/leaf_model.tflite
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/Lato-Regular.ttf
+        - asset: assets/Lato-Bold.ttf
+          weight: 700
